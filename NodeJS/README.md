@@ -40,9 +40,9 @@ In order to follow along the tutorial series, I recommend you to use Visual Stud
 
 Install the below extensions:
 
-- [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
-- [Prettier](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)
-- [Path Autocomplete](https://marketplace.visualstudio.com/items?itemName=ionutvmi.path-autocomplete)
+- npm init @eslint/config
+- npm install --save-dev --save-exact prettier
+- npm install --save-dev eslint eslint-config-chatur
 
 ### Settings
 
