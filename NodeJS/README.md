@@ -40,9 +40,17 @@ In order to follow along the tutorial series, I recommend you to use Visual Stud
 
 Install the below extensions:
 
-- npm init @eslint/config
-- npm install --save-dev --save-exact prettier
+```sh
+ npm init @eslint/config
+```
+
+```sh
+ npm install --save-dev --save-exact prettier
+```
+
+```sh
 - npm install --save-dev eslint eslint-config-chatur
+```
 
 ### Settings
 
