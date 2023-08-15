@@ -3,11 +3,21 @@
 <p>Installation</p>
 
 ```sh
+sudo apt update && sudo apt install curl
+```
+
+```sh
 sudo apt-get install nodejs
 ```
 
 ```sh
 sudo apt install npm
+```
+
+<p>Install specific version</p>
+
+```sh
+sudo apt-get install nodejs
 ```
 
 <p>Check Version</p>
@@ -17,7 +27,10 @@ nodejs -v
 ```
 
 ```sh
-npm -v
+curl -fsSL https://deb.nodesource.com/setup_lts.x
+```
+```sh
+
 ```
 
 <p>Remove Node and npm</p>
