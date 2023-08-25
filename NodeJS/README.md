@@ -43,6 +43,15 @@ sudo apt remove nodejs
 sudo apt remove npm
 ```
 
+<!-- START A PROJECT -->
+
+```sh
+npm init
+```
+```sh
+npm install express
+```
+
 <!-- EDITOR SETUP -->
 
 ## VS Code Editor Setup
