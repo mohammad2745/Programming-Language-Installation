@@ -44,6 +44,7 @@ sudo apt remove npm
 ```
 
 <!-- START A PROJECT -->
+### Start a project
 
 ```sh
 npm init
