@@ -1,4 +1,9 @@
 ## Install MongoDB
+ <p>Follow the link</p>
+
+ ```sh
+https://www.digitalocean.com/community/tutorials/how-to-install-mongodb-on-ubuntu-20-04
+```
 
 <p>Download MongoDB version from the link. Adjust the file before download</p>
 
@@ -46,7 +51,7 @@ sudo dpkg -i <download_file>
 mongosh
 ```
 ## Uninstall MongoDB
-Follow the link
+<p>Follow the link</p>
 
 ```sh
 https://www.fosstechnix.com/tutorial/mongodb/uninstall-mongodb-from-ubuntu-20-04-lts/
