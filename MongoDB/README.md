@@ -56,3 +56,10 @@ mongosh
 ```sh
 https://www.fosstechnix.com/tutorial/mongodb/uninstall-mongodb-from-ubuntu-20-04-lts/
 ```
+
+## Install Mongo Compass
+<p>Follow the link</p>
+
+```sh
+(https://www.digitalocean.com/community/tutorials/how-to-use-mongodb-compass)https://www.digitalocean.com/community/tutorials/how-to-use-mongodb-compass
+```
