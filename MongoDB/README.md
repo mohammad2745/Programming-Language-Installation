@@ -63,3 +63,8 @@ https://www.fosstechnix.com/tutorial/mongodb/uninstall-mongodb-from-ubuntu-20-04
 ```sh
 (https://www.digitalocean.com/community/tutorials/how-to-use-mongodb-compass)https://www.digitalocean.com/community/tutorials/how-to-use-mongodb-compass
 ```
+
+<p>Connect mongo compass to local DB</p>
+```sh
+mongodb://localhost:27017
+```
