@@ -52,6 +52,12 @@ mongosh
 
 ```sh
 https://www.mongodb.com/try/download/compass
+
+## Uninstall MongoDB
+Follow the link
+
+```sh
+https://www.fosstechnix.com/tutorial/mongodb/uninstall-mongodb-from-ubuntu-20-04-lts/
 ```
 
 ```sh
