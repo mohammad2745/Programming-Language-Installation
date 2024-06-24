@@ -89,17 +89,17 @@ curl -fsS https://www.pgadmin.org/static/packages_pgadmin_org.pub | sudo gpg --d
 sudo sh -c 'echo "deb [signed-by=/usr/share/keyrings/packages-pgadmin-org.gpg] https://ftp.postgresql.org/pub/pgadmin/pgadmin4/apt/$(lsb_release -cs) pgadmin4 main" > /etc/apt/sources.list.d/pgadmin4.list && apt update'
 ```
 
-# Install for both desktop and web modes:
+<p>Install for both desktop and web modes </p>
 ```sh
 sudo apt install pgadmin4
 ```
 
-# Install for desktop mode only:
+<p>Install for desktop mode only </p>
 ```sh
 sudo apt install pgadmin4-desktop
 ```
 
-# Install for web mode only: 
+<p>Install for web mode only </p>
 ```sh
 sudo apt install pgadmin4-web 
 ```
