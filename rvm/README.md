@@ -40,9 +40,3 @@ set a default version
 ```sh
 nvm alias default 14.17.0
 ```
-
-To check install version of node 
-
-```sh
-nvm list
-```
