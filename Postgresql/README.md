@@ -75,6 +75,10 @@ To exit out of the PostgreSQL prompt
 \q
 ```
 
+```sh
+quit
+```
+
 ### Install pgAdmin
 
 ```sh
