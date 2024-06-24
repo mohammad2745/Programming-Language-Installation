@@ -1,73 +1,101 @@
-## Install MySQL and phpMyAdmin process
+## Install Postgres and pgAdmin process
 
-### Install MySQL
+### Install Postgres
 
 ```sh
 sudo apt update
 ```
 
 ```sh
-sudo apt install mysql-server
+sudo apt install gnupg2 wget nano
 ```
-
-<p>Open mySQL on terminal</p>
+<p>Add the PostgreSQL 16 repository</p>
 
 ```sh
-sudo mysql
+sudo sh -c 'echo "deb http://apt.postgresql.org/pub/repos/apt $(lsb_release -cs)-pgdg main" > /etc/apt/sources.list.d/pgdg.list
 ```
 
-<p>Change Password</p>
-
 ```sh
-ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'password';
+sudo sh -c 'echo "deb http://apt.postgresql.org/pub/repos/apt $(lsb_release -cs)-pgdg main" > /etc/apt/sources.list.d/pgdg.list
 ```
 
-<p>For more secure installation. (Need to exit from mysql by typing exit)</p>
-
 ```sh
-mysql_secure_installation
+sudo apt update
 ```
 
-<p>Open mySQL on terminal - After Secure Installation</p>
+<p>Install PostgreSQL 16</p>
 
 ```sh
-mysql -u root -p
+sudo apt install postgresql-16 postgresql-contrib-16
 ```
 
-<p>Create a new user</p>
+Start and enable PostgreSQL service
 
 ```sh
-CREATE USER 'username'@'host' IDENTIFIED WITH authentication_plugin BY 'password';
+sudo systemctl start postgresql
 ```
 
-<p>Start mySQL</p>
-
 ```sh
-sudo systemctl start mysql
+sudo systemctl enable postgresql
 ```
 
-<p> mySQL Status</p>
-
 ```sh
-systemctl status mysql.service
+sudo systemctl restart postgresql
 ```
 
-<p>Stop mySQL</p>
+Check Version
 
 ```sh
-sudo systemctl stop mysql.service
+psql --version
 ```
 
-<p>Check mySQL version</p>
+Stop PostgreSQL service
 
 ```sh
-mysql --version
+sudo service postgresql stop
 ```
 
-### Install phpMyAdmin
+<p>Connect to PostgreSQL</p>
 
-<p>Check mySQL version</p>
+Connect as the postgres user
 
 ```sh
-sudo apt install phpmyadmin php-mbstring php-zip php-gd php-json php-curl
+sudo -u postgres psql
+```
+
+Set a password for postgres user
+
+```sh
+ALTER USER postgres PASSWORD 'password';
+```
+
+To exit out of the PostgreSQL prompt
+
+```sh
+\q
+```
+
+### Install pgAdmin
+
+```sh
+curl -fsS https://www.pgadmin.org/static/packages_pgadmin_org.pub | sudo gpg --dearmor -o /usr/share/keyrings/packages-pgadmin-org.gpg
+```
+
+```sh
+sudo sh -c 'echo "deb [signed-by=/usr/share/keyrings/packages-pgadmin-org.gpg] https://ftp.postgresql.org/pub/pgadmin/pgadmin4/apt/$(lsb_release -cs) pgadmin4 main" > /etc/apt/sources.list.d/pgadmin4.list && apt update'
+```
+
+# Install for both desktop and web modes:
+```sh
+sudo apt install pgadmin4
+```
+
+# Install for desktop mode only:
+```sh
+sudo apt install pgadmin4-desktop
+```
+
+# Install for web mode only: 
+```sh
+sudo apt install pgadmin4-web 
 ```
