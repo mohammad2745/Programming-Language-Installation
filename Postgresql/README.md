@@ -90,16 +90,19 @@ sudo sh -c 'echo "deb [signed-by=/usr/share/keyrings/packages-pgadmin-org.gpg] h
 ```
 
 <p>Install for both desktop and web modes </p>
+
 ```sh
 sudo apt install pgadmin4
 ```
 
 <p>Install for desktop mode only </p>
+
 ```sh
 sudo apt install pgadmin4-desktop
 ```
 
 <p>Install for web mode only </p>
+
 ```sh
 sudo apt install pgadmin4-web 
 ```
