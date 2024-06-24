@@ -40,6 +40,10 @@ sudo systemctl enable postgresql
 ```
 
 ```sh
+sudo systemctl postgresql status
+```
+
+```sh
 sudo systemctl restart postgresql
 ```
 
