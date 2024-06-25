@@ -1,4 +1,4 @@
-## Install NVM
+## Git Commands
 
 ### Install nvm
 
