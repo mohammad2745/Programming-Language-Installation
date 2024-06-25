@@ -1,6 +1,4 @@
-## Install NVM
-
-#### Install nvm
+### Install nvm
 
 ```sh
 sudo apt install curl
