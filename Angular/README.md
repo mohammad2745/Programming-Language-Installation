@@ -16,6 +16,12 @@ npm install -g  @angular/cli@16.1.6
 ng new my-app
 ```
 
+When angular version is 18 then use this command
+
+```sh
+ng new my-app --no-standalone
+```
+
 ### Create a new component
 
 ```sh
