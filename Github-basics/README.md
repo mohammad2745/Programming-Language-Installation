@@ -118,3 +118,29 @@ git reset --hard HEAD
 ```sh
 git checkout -- path/to/file
 ```
+
+## Git Merge
+
+<p>First, switch to the branch you want to merge changes into.</p>
+
+```sh
+git checkout target-branch
+```
+
+<p>Example</p>
+
+```sh
+git checkout target-branch
+```
+
+<p>Merge the branch with the changes into the target branch.</p>
+
+```sh
+git merge source-branch
+```
+
+<p>Example</p>
+
+```sh
+git merge feature-branch
+```
