@@ -104,3 +104,17 @@ git pull origin <remote-name>
 git log
 git log branch_name
 ```
+
+## Git Last Commits
+
+<p>Reset to the last commits for all files</p>
+
+```sh
+git reset --hard HEAD
+```
+
+<p>Reset to the last commits for specific file</p>
+
+```sh
+git checkout -- path/to/file
+```
