@@ -98,6 +98,21 @@ git pull origin <remote-name>
 
 <p>Pulls changes from the specified branch in the remote repository. For example, git pull origin main will pull changes from the main branch on the remote named origin.</p>
 
+<p>----------------</p>
+
+<h3>If you want to pull from another branch which is not in your local repository</h3>
+
+Fetch all the branches
+
+```sh
+git fetch origin
+```
+```sh
+git pull origin pull-branch-name
+```
+
+If any conflict occurs solve  them and commit it to your working branch.
+
 ## Git Last Commits
 
 ```sh
