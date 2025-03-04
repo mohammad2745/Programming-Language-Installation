@@ -21,7 +21,7 @@ git push -u origin master
 
 ## Git Branch
 
-<p>List All Remote Branches</p>
+<p>List All Local Branches</p>
 
 ```sh
 git branch
@@ -64,6 +64,32 @@ git branch -m <new-branch-name>
 
 ```sh
 git branch -m <old-branch-name> <new-branch-name>
+```
+
+<h3>Checkout From a Remote Branch</h3>
+
+<p>Fetch the latest branches from remote</p>
+
+```sh
+git fetch origin
+```
+
+<p>Check if the branch already exists locally</p>
+
+```sh
+git branch --list
+```
+
+<p>Checkout the remote branch</p>
+
+```sh
+git checkout -b <branch-name> origin/<branch-name>
+```
+
+<p>Pull the latest changes (if needed)</p>
+
+```sh
+git pull origin <branch-name>
 ```
 
 <h3>Delete a Branch</h3>
